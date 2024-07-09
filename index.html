@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="first_div">
+        <div class="left_side">
+            <div class="top_content">
+                <textarea id="text_area" placeholder="Digite sua mensagem aqui"></textarea>
+            </div>
+            <div class="bottom_content">
+                <div class="alert_content">
+                    <img src="assets/item.svg" class="Icone de Alerta">
+                    <p id="alert_message">Por favor, apenas letras minúsculas e sem acento!</p>
+                </div>
+                <div class="button_display">
+                    <button class="button_full" onclick="criptografia()">Criptografar</button>
+                    <button class="button_underline" onclick="descriptografia()">Descriptografar</button>
+                </div>
+            </div>
+        </div>
+        <div class="right_side">
+            <div class="card_view_none">
+                <img src="assets/people_search.png" class="Imagem de uma mulher pesquisando com uma lupa">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+            </div>
+            <div class="card_view_message">
+                <p id="edit_show">Nenhuma mensagem encontrada</p>
+                <button class="button_underline" onclick="copia()">Copiar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
